@@ -1,0 +1,19 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "boot": "lerna bootstrap",
+    "clean": "lerna clean && rm -rf node_modules",
+    "storybook": "lerna --stream --scope docs run storybook",
+    "prepublish": "lerna run --stream --sort prepublish",
+    "prepare": "lerna run --stream --sort prepare"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}

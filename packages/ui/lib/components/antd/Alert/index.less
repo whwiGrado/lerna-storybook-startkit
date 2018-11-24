@@ -1,0 +1,25 @@
+@import '../varaiants.less';
+@import '../../style/mixins.less';
+@import 'antd/lib/alert/style/index.less';
+
+.@{alert-prefix-cls} {
+  padding: @padding-xs+1 @padding-md @padding-xs+1 @padding-hg;
+  width: @alert-width;
+
+  &-message {
+    @body-text();
+    color: @text-color-body;
+  }
+
+  &.has-close-btn {
+    padding: @padding-xs + 1px @padding-hg;
+  }
+
+  &-banner {
+    border-radius: @border-radius-base;
+  }
+
+  &-close-icon {
+    font-size: @font-size-body;
+  }
+}

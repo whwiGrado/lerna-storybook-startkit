@@ -1,0 +1,161 @@
+/*
+************************************************************
+** aPaas default theme
+************************************************************
+*/
+// theme colors
+@theme-color: rgba(100, 120, 250, 1);
+@theme-lighter-color: rgba(100, 120, 250, .2);
+@theme-lightest-color: rgba(100, 120, 250, .1);
+@theme-hover-color: rgba(100, 120, 250, .8);
+@theme-disabled-color: rgba(100, 120, 250, .25);
+@theme-active-color: rgba(76, 57, 204, 1);
+@theme-bg-color: rgba(100, 120, 250, .1);
+// state colors
+@primary-color: @theme-color;
+
+@success-color: rgba(57, 181, 74, 1);
+@success-hover-color: rgba(57, 181, 74, .8);
+@success-bg-color: rgba(57, 181, 74, .1);
+
+@warning-color: rgba(247, 152, 28, 1);
+@warning-hover-color: rgba(247, 152, 28, .8);
+@warning-active-color: rgba(197, 121, 22, 1);
+@warning-bg-color: rgba(247, 152, 28, .1);
+
+@error-color: rgba(245, 86, 86, 1);
+@error-hover-color: rgba(245, 86, 86, .8);
+@error-active-color: rgba(196, 68, 68, 1);
+@error-bg-color: rgba(245, 86, 86, .1);
+// background colors
+@background-color-white: #ffffff;
+// todo: 语义化 assistant colors
+@color-yellow: #fadb14;
+
+// font family
+/*
+* font: -apple-system
+* device target: San Francisco in iOS Safari, macOS Safari, macOS Firefox
+*
+* font: BlinkMacSystemFont
+* device target: Chrome < 56 for OS X (San Francisco)
+*
+* font: "Segoe UI"
+* device target: Windows7+ and Windows Phone
+*
+* font: Roboto
+* device target: Android and newer Chrome OS
+*
+* English and Number fallbacks:
+* Mac fallback: "Helvetica Neue", Helvetica
+* Mac and Windows fallback: Arial
+*
+* Chinese fallbacks:
+* Mac fallback: "PingFang SC", "Hiragino Sans GB", "Heiti SC"
+* Windows fallback: "Microsoft YaHei"
+*
+* Miss all fonts fallback: sans-serif
+*
+* Emoji fonts: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+* */
+@font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+@font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+@font-family-base: @font-family-sans-serif;
+// font colors
+@text-color-heading-and-main: rgba(0, 0, 0, .85);
+@text-color-body: rgba(0, 0, 0, .65);
+@text-color-body-secondary: rgba(0, 0, 0, .45);
+@text-color-disabled: rgba(0, 0, 0, .25);
+// font size
+@font-size-headline-1: 24px;
+@font-size-headline-2: 20px;
+@font-size-headline-3: 16px;
+@font-size-body: 14px;
+@font-size-body-secondary: 12px;
+// font weight
+@font-weight-light: 200;
+@font-weight-base: 400;
+@font-weight-medium: 500;
+@font-weight-bold: 700;
+// font line-height
+@line-height-headline-1: 32px;
+@line-height-headline-2: 28px;
+@line-height-headline-3: 24px;
+@line-height-body: 22px;
+@line-height-body-secondary: 20px;
+// border color
+@border-color-base: #d9d9d9;
+@border-color-split: #e8e8e8;
+
+// height and line-height
+@input-height: 32px;
+@menu-item-height: 48px;
+@btn-height-base: 32px;
+@btn-height-small: 24px;
+@tag-height: 24px;
+@tag-height-sm: 14px;
+@checkbox-height: 16px;
+@radio-height: 16px;
+@badge-height: 20px;
+@badge-dot-height: 8px;
+@badge-status-height: 8px;
+@pagination-item-height: 28px;
+@spin-dot-size-sm: 16px;
+@spin-dot-size: 24px;
+@spin-dot-size-lg: 32px;
+@title-bar-height: 56px;
+
+// width and min-width
+@view-max-width: 600px;
+@sider-width: 200px;
+@menu-width: 200px;
+@btn-min-width: 88px;
+@input-number-min-width: 600px;
+@switch-min-width: 48px;
+@select-min-width: 90px;
+@alert-width: 600px;
+@tooltip-max-width: 136px;
+@popover-min-width: 144px;
+@popover-max-width: 420px;
+@notification-width: 420px;
+@time-picker-width: 288px;
+@date-picker-width: 288px;
+@table-columns-min-width: 72px;
+
+// padding
+@padding-hg: 40px;
+@padding-xl: 32px;
+@padding-lg: 24px;
+@padding-md: 16px;
+@padding-sm: 12px;
+@padding-xs: 8px;
+
+// border-radius
+@border-radius-base: 4px;
+@border-radius-small: 2px;
+@tag-border-radius: 12px;
+
+// todo variates
+// 黑色背景
+@background-color-dark: rgba(0, 0, 0, 1);
+@background-color-dark-secondary: rgba(0, 0, 0, .85);
+@background-color-dark-ternary: rgba(0, 0, 0, .65);
+// 灰色背景
+@background-color-light: #fafafa; // Background of table header and selected itemx
+@background-color-base: #f5f5f5; // Default grey background color
+@background-color-gray-switch: #cccccc; // Switch off status grey background color
+@background-color-gray-switch-disabled: #e5e5e5; // Switch disabled status grey background color
+
+// outline
+@outline-width: 0px;
+
+// shadow
+@shadow-color: rgba(0, 0, 0, .16);
+@box-shadow-base: 0 2px 8px 0 @shadow-color;
+@box-shadow-lg: 0 4px 16px 0 @shadow-color;
+
+// screen width
+@main-width: 600px;
+@screen-width: 1200px;
+@screen-with-sider-min-width: 984px;
+@screen-with-sider-max-width: 1624px;

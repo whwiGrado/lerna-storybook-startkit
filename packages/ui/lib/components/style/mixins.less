@@ -1,0 +1,82 @@
+@import '../../theme/default.less';
+
+// base rules
+@headline-1: {
+  font-size: @font-size-headline-1;
+  line-height: @line-height-headline-1;
+  font-weight: @font-weight-medium;
+  color: @text-color-heading-and-main;
+};
+
+@headline-2: {
+  font-size: @font-size-headline-2;
+  line-height: @line-height-headline-2;
+  font-weight: @font-weight-medium;
+  color: @text-color-heading-and-main;
+};
+
+@headline-3: {
+  font-size: @font-size-headline-3;
+  line-height: @line-height-headline-3;
+  font-weight: @font-weight-medium;
+  color: @text-color-heading-and-main;
+};
+
+@body-text: {
+  font-size: @font-size-body;
+  line-height: @line-height-body;
+  font-weight: @font-weight-base;
+  color: @text-color-heading-and-main;
+};
+
+@body-text-secondary: {
+  font-size: @font-size-body-secondary;
+  line-height: @line-height-body-secondary;
+  font-weight: @font-weight-base;
+  color: @text-color-body;
+};
+
+/* font weight mixin */
+.font-weight-mixin() {
+  &-medium,
+  &.medium {
+    font-weight: @font-weight-medium;
+  }
+
+  &-bold,
+  &.bold {
+    font-weight: @font-weight-bold;
+  }
+}
+
+/* font color mixin */
+.font-color-mixin() {
+  &-normal,
+  &.normal {
+    color: @text-color-heading-and-main;
+  }
+  &-primary,
+  &.primary {
+    color: @primary-color;
+  }
+  &-gray,
+  &.gray {
+    color: @text-color-body;
+  }
+  &-light-gray,
+  &.light-gray {
+    color: @text-color-body-secondary;
+  }
+  &-disabled,
+  &.disabled {
+    color: @text-color-disabled;
+  }
+  &-error,
+  &.error {
+    color: @error-color;
+  }
+  &-warning,
+  &.warning {
+    color: @warning-color;
+  }
+}

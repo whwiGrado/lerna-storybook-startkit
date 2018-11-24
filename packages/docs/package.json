@@ -1,0 +1,46 @@
+{
+  "name": "docs",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "iGrado <whw_igrado@163.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/docs.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "start": "yarn run storybook",
+    "storybook": "start-storybook -p 9001 -c .storybook"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@storybook/addon-actions": "^4.0.7",
+    "@storybook/addon-info": "^4.0.8",
+    "@storybook/addon-knobs": "^4.0.8",
+    "@storybook/addon-links": "^4.0.8",
+    "@storybook/addon-options": "^4.0.8",
+    "@storybook/addon-viewport": "^4.0.8",
+    "@storybook/react": "^4.0.7",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "cssnano": "^4.1.7",
+    "json-loader": "^0.5.7",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "postcss-loader": "^3.0.0",
+    "storybook-readme": "^4.0.2",
+    "styled-components": "^4.1.1",
+    "yaml-loader": "^0.5.0"
+  },
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "ui": "^1.0.0"
+  }
+}
